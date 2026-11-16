@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Supprimer mon compte · Frimouz</title>
+<meta name="description" content="Comment supprimer son compte Frimouz et ses données.">
+<link rel="icon" href="icone.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Fredoka:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="barre">
+  <a class="marque" href="index.html"><img src="icone.png" alt="" width="40" height="40"><span>Frimouz</span></a>
+  <button class="langue" type="button" onclick="changerLangue()"><span lang="fr">English</span><span lang="en">Français</span></button>
+</header>
+<main>
+<h1><span lang="fr">Supprimer mon compte</span><span lang="en">Delete my account</span></h1>
+
+<section><h2><span lang="fr">Depuis l’application</span><span lang="en">From the app</span></h2>
+<div lang="fr"><ol><li>Ouvre Frimouz et va sur ton profil.</li><li>Touche la roue dentée en haut à droite (Paramètres).</li><li>Touche « Effacer mes données », puis « Tout effacer ».</li></ol>
+<p>Ton compte est supprimé de nos serveurs tout de suite, avec ton profil, tes amis, tes messages, tes stories et tes pièces. Tout ce qui est sur ton téléphone est effacé.</p></div>
+<div lang="en"><ol><li>Open Frimouz and go to your profile.</li><li>Tap the gear at the top right (Settings).</li><li>Tap “Erase my data”, then “Erase everything”.</li></ol>
+<p>Your account is deleted from our servers right away, along with your profile, friends, messages, stories and coins. Everything on your phone is erased.</p></div></section>
+<section><h2><span lang="fr">Sans l’application</span><span lang="en">Without the app</span></h2>
+<div lang="fr"><p>Écris-nous à <a href="mailto:frimouz.pro@gmail.com">frimouz.pro@gmail.com</a> avec ton pseudo et ton code ami (visible dans l’onglet Messages). Nous supprimons ton compte et toutes ses données sous 30 jours, et nous te confirmons la suppression.</p></div>
+<div lang="en"><p>Email us at <a href="mailto:frimouz.pro@gmail.com">frimouz.pro@gmail.com</a> with your nickname and friend code (shown in the Messages tab). We delete your account and all its data within 30 days and confirm the deletion.</p></div></section>
+<section><h2><span lang="fr">Ce qui est gardé</span><span lang="en">What is kept</span></h2>
+<div lang="fr"><p>Les temps déjà publiés au classement du jour du défi restent liés à ton seul pseudo, sans lien avec ton compte. Les achats restent enregistrés chez Apple ou Google, comme l’exige la loi.</p></div>
+<div lang="en"><p>Times already published on the daily challenge leaderboard stay linked to your nickname only, with no link to your account. Purchases stay on record with Apple or Google, as required by law.</p></div></section>
+</main>
+<footer>
+  <nav><a href="confidentialite.html"><span lang="fr">Confidentialité</span><span lang="en">Privacy</span></a><a href="regles.html"><span lang="fr">Règles de Frimouz</span><span lang="en">Frimouz rules</span></a><a href="suppression-compte.html"><span lang="fr">Supprimer mon compte</span><span lang="en">Delete my account</span></a></nav>
+  <p><span lang="fr">Contact</span><span lang="en">Contact</span> : <a href="mailto:frimouz.pro@gmail.com">frimouz.pro@gmail.com</a></p>
+  <p><span lang="fr">Frimouz est édité par Allokrea.</span><span lang="en">Frimouz is published by Allokrea.</span></p>
+</footer>
+<script>
+function appliquer(l){document.documentElement.lang=l;try{localStorage.setItem('langue',l)}catch(e){}}
+function changerLangue(){appliquer(document.documentElement.lang==='fr'?'en':'fr')}
+(function(){var l=null;try{l=localStorage.getItem('langue')}catch(e){}
+var q=new URLSearchParams(location.search).get('lang');l=q||l||((navigator.language||'fr').slice(0,2)==='fr'?'fr':'en');appliquer(l)})();
+</script>
+</body>
+</html>

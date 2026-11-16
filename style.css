@@ -1,0 +1,52 @@
+/* Site de Frimouz : mêmes couleurs que l'app (blanc en clair, bleu nuit en sombre). */
+:root {
+  --fond: #FFFFFF;
+  --carte: #F3F5FB;
+  --texte: #0E1440;
+  --doux: #5B6488;
+  --trait: #E2E6F2;
+  --lien: #5B3FD9;
+  --degrade: linear-gradient(45deg, #1B2A8F, #5B3FD9, #C23FB0, #FF4F9A);
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fond: #0A0E29;
+    --carte: #151B45;
+    --texte: #FFFFFF;
+    --doux: #AEB6D9;
+    --trait: #26306A;
+    --lien: #FF7AB6;
+    color-scheme: dark;
+  }
+}
+* { box-sizing: border-box; }
+html[lang="fr"] [lang="en"], html[lang="en"] [lang="fr"] { display: none; }
+body {
+  margin: 0;
+  background: var(--fond);
+  color: var(--texte);
+  font: 17px/1.55 "Fredoka", system-ui, sans-serif;
+}
+.barre, main, footer { max-width: 760px; margin: 0 auto; padding-inline: 16px; }
+.barre { display: flex; align-items: center; justify-content: space-between; padding-block: 16px; }
+.marque { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--texte); font: 26px "Lilita One", sans-serif; }
+.marque img { border-radius: 10px; }
+.langue {
+  font: 600 15px "Fredoka", sans-serif; color: #fff; background: var(--degrade);
+  border: 0; border-radius: 99px; padding: 8px 16px; cursor: pointer;
+}
+h1 { font: 34px/1.15 "Lilita One", sans-serif; margin: 12px 0 20px; text-wrap: balance; }
+h2 { font: 21px "Lilita One", sans-serif; margin: 0 0 6px; }
+section { background: var(--carte); border: 1px solid var(--trait); border-radius: 20px; padding: 16px 18px; margin-bottom: 14px; }
+section p { margin: 0 0 8px; }
+section p:last-child { margin-bottom: 0; }
+ul, ol { margin: 0; padding-left: 1.3em; }
+li { margin-bottom: 6px; }
+a { color: var(--lien); }
+.maj { color: var(--doux); font-size: 15px; }
+.hero { text-align: center; padding: 28px 18px; }
+.hero img { border-radius: 28px; }
+.slogan { font: 26px "Lilita One", sans-serif; background: var(--degrade); -webkit-background-clip: text; background-clip: text; color: transparent; margin: 12px 0; }
+footer { padding-block: 24px 40px; color: var(--doux); font-size: 15px; }
+footer nav { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-bottom: 8px; }
