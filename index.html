@@ -3,27 +3,134 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Frimouz</title>
-<meta name="description" content="Frimouz : tous tes jeux, tous tes amis.">
+<title>Frimouz · Tous tes jeux, tous tes amis</title>
+<meta name="description" content="Frimouz réunit plus de 15 jeux rapides à jouer seul, à plusieurs sur le même téléphone ou en ligne avec tes amis. Défi du jour, messages, stories.">
+<meta property="og:title" content="Frimouz">
+<meta property="og:description" content="Tous tes jeux, tous tes amis.">
+<meta property="og:image" content="icone.png">
+<meta name="theme-color" content="#101836">
 <link rel="icon" href="icone.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Fredoka:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="accueil">
 <header class="barre">
   <a class="marque" href="index.html"><img src="icone.png" alt="" width="40" height="40"><span>Frimouz</span></a>
   <button class="langue" type="button" onclick="changerLangue()"><span lang="fr">English</span><span lang="en">Français</span></button>
 </header>
-<main>
-<h1><span lang="fr">Frimouz</span><span lang="en">Frimouz</span></h1>
 
-<section class="hero"><img src="icone.png" alt="" width="128" height="128">
-<p class="slogan"><span lang="fr">Tous tes jeux, tous tes amis.</span><span lang="en">All your games, all your friends.</span></p>
-<div lang="fr"><p>Frimouz réunit des jeux rapides à jouer seul, à plusieurs sur le même téléphone ou en ligne avec tes amis : Dominos, Échecs, Aligne 4, Looping, Le Boudeur, Quiz Éclair et bien d’autres. Un défi du jour, des stories et des messages entre amis.</p></div>
-<div lang="en"><p>Frimouz brings together quick games to play solo, with friends on the same phone, or online: Dominoes, Chess, Line Up 4, Looping, Sulky, Lightning Quiz and many more. A daily challenge, stories and messages between friends.</p></div>
-</section>
+<main>
+  <!-- En haut : le slogan et l'app -->
+  <div class="une">
+    <div class="une-texte">
+      <p class="etiquette"><span lang="fr">En test sur Android · bientôt sur iPhone</span><span lang="en">In testing on Android · coming soon to iPhone</span></p>
+      <h1><span lang="fr">Tous tes jeux,<br>tous tes amis.</span><span lang="en">All your games,<br>all your friends.</span></h1>
+      <p class="chapo"><span lang="fr">Plus de 15 jeux rapides dans une seule app : seul, à plusieurs sur le même téléphone, ou en ligne avec tes amis. Une partie dure quelques minutes, et il y a toujours un défi qui t'attend.</span><span lang="en">Over 15 quick games in one app: solo, with friends on the same phone, or online. A game lasts a few minutes, and there's always a challenge waiting for you.</span></p>
+      <ul class="pastilles">
+        <li><span lang="fr">Gratuit</span><span lang="en">Free</span></li>
+        <li><span lang="fr">Sans e-mail obligatoire</span><span lang="en">No email needed</span></li>
+        <li><span lang="fr">Dès 13 ans</span><span lang="en">Ages 13+</span></li>
+      </ul>
+    </div>
+    <figure class="telephone une-telephone"><img src="captures/accueil.jpg" alt="" width="900" height="1957" loading="eager"></figure>
+  </div>
+
+  <!-- Trois façons de jouer -->
+  <section class="bloc">
+    <h2 class="titre-bloc"><span lang="fr">Joue comme tu veux</span><span lang="en">Play your way</span></h2>
+    <div class="trois">
+      <article class="carte-info">
+        <span class="pictogramme" aria-hidden="true">🎯</span>
+        <h3><span lang="fr">Seul</span><span lang="en">Solo</span></h3>
+        <p><span lang="fr">Bats tes records, monte de niveau dans Le Carré, enchaîne les loopings ou les lignes dans Empilo.</span><span lang="en">Beat your records, level up in The Square, chain loops in Looping or lines in Stacko.</span></p>
+      </article>
+      <article class="carte-info">
+        <span class="pictogramme" aria-hidden="true">📱</span>
+        <h3><span lang="fr">Sur le même téléphone</span><span lang="en">On the same phone</span></h3>
+        <p><span lang="fr">Jusqu'à 4 joueurs autour d'un seul téléphone : parfait en soirée, en voyage ou à la récré.</span><span lang="en">Up to 4 players around one phone: perfect for parties, trips or breaks.</span></p>
+      </article>
+      <article class="carte-info">
+        <span class="pictogramme" aria-hidden="true">🌍</span>
+        <h3><span lang="fr">En ligne</span><span lang="en">Online</span></h3>
+        <p><span lang="fr">Défie tes amis à distance, rejoins l'Arène pour trouver un adversaire, et discute pendant la partie.</span><span lang="en">Challenge your friends remotely, join the Arena to find an opponent, and chat during the game.</span></p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Les jeux -->
+  <section class="bloc">
+    <h2 class="titre-bloc"><span lang="fr">Les jeux</span><span lang="en">The games</span></h2>
+    <p class="sous-titre"><span lang="fr">Réflexion, rapidité, stratégie ou adresse : il y en a pour tous les goûts, et de nouveaux arrivent régulièrement.</span><span lang="en">Puzzles, speed, strategy or skill: something for everyone, with new games added regularly.</span></p>
+    <ul class="jeux">
+      <li><span class="tuile" style="--c:#3D86FF"><img src="jeux/puissance4.svg" alt=""></span><span lang="fr">Aligne 4</span><span lang="en">Line Up 4</span></li>
+      <li><span class="tuile" style="--c:#1C3A9E"><img src="jeux/dominos.svg" alt=""></span><span lang="fr">Dominos</span><span lang="en">Dominoes</span></li>
+      <li><span class="tuile" style="--c:#6A4AE0"><img src="jeux/echecs.svg" alt=""></span><span lang="fr">Échecs</span><span lang="en">Chess</span></li>
+      <li><span class="tuile" style="--c:#6A2BD8"><img src="jeux/looping.svg" alt=""></span><span lang="fr">Looping</span><span lang="en">Looping</span></li>
+      <li><span class="tuile" style="--c:#FF7A45"><img src="jeux/empilo.svg" alt=""></span><span lang="fr">Empilo</span><span lang="en">Stacko</span></li>
+      <li><span class="tuile" style="--c:#2E6BFF"><img src="jeux/fusion.svg" alt=""></span><span lang="fr">Fusion</span><span lang="en">Fusion</span></li>
+      <li><span class="tuile" style="--c:#3B2A9E"><img src="jeux/blocs.svg" alt=""></span><span lang="fr">Bloc à Bloc</span><span lang="en">Block by Block</span></li>
+      <li><span class="tuile" style="--c:#1E9E8A"><img src="jeux/carre.svg" alt=""></span><span lang="fr">Le Carré</span><span lang="en">The Square</span></li>
+      <li><span class="tuile" style="--c:#5B4BD6"><img src="jeux/tour.svg" alt=""></span><span lang="fr">La Tour</span><span lang="en">The Tower</span></li>
+      <li><span class="tuile" style="--c:#3A2380"><img src="jeux/boudeur.svg" alt=""></span><span lang="fr">Le Boudeur</span><span lang="en">Sulky</span></li>
+      <li><span class="tuile" style="--c:#8E5CFF"><img src="jeux/quiz.svg" alt=""></span><span lang="fr">Quiz Éclair</span><span lang="en">Lightning Quiz</span></li>
+      <li><span class="tuile" style="--c:#1E88E5"><img src="jeux/calcul.svg" alt=""></span><span lang="fr">Calcul Express</span><span lang="en">Quick Maths</span></li>
+      <li><span class="tuile" style="--c:#1F5FE0"><img src="jeux/moitie.svg" alt=""></span><span lang="fr">La Moitié</span><span lang="en">Half Full</span></li>
+      <li><span class="tuile" style="--c:#3A3F4B"><img src="jeux/souris.svg" alt=""></span><span lang="fr">Souris &amp; Fromage</span><span lang="en">Mouse &amp; Cheese</span></li>
+      <li><span class="tuile" style="--c:#555A66"><img src="jeux/flash.svg" alt=""></span><span lang="fr">Flash</span><span lang="en">Flash</span></li>
+      <li><span class="tuile" style="--c:#0E3A5C"><img src="jeux/croisement.svg" alt=""></span><span lang="fr">Le Croisement</span><span lang="en">The Crossing</span></li>
+      <li><span class="tuile" style="--c:#E8436A"><img src="jeux/rebours.svg" alt=""></span><span lang="fr">Top Zéro</span><span lang="en">Top Zero</span></li>
+    </ul>
+  </section>
+
+  <!-- Captures -->
+  <section class="bloc">
+    <h2 class="titre-bloc"><span lang="fr">Un coup d'œil</span><span lang="en">Take a look</span></h2>
+    <div class="captures">
+      <figure class="telephone"><img src="captures/accueil.jpg" alt="" width="900" height="1957" loading="lazy"><figcaption><span lang="fr">L'accueil et le défi du jour</span><span lang="en">Home and the daily challenge</span></figcaption></figure>
+      <figure class="telephone"><img src="captures/empilo.jpg" alt="" width="900" height="1957" loading="lazy"><figcaption><span lang="fr">Empilo, en pleine partie</span><span lang="en">Stacko, mid-game</span></figcaption></figure>
+      <figure class="telephone"><img src="captures/boutique.jpg" alt="" width="900" height="1493" loading="lazy"><figcaption><span lang="fr">La boutique</span><span lang="en">The shop</span></figcaption></figure>
+    </div>
+  </section>
+
+  <!-- Chaque jour -->
+  <section class="bloc">
+    <h2 class="titre-bloc"><span lang="fr">Une raison de revenir chaque jour</span><span lang="en">A reason to come back every day</span></h2>
+    <div class="grille-infos">
+      <article class="carte-info"><span class="pictogramme" aria-hidden="true">🏆</span><h3><span lang="fr">Le défi du jour</span><span lang="en">The daily challenge</span></h3><p><span lang="fr">La même partie pour tout le monde, un classement mondial, et des pièces à gagner.</span><span lang="en">The same game for everyone, a world leaderboard, and coins to win.</span></p></article>
+      <article class="carte-info"><span class="pictogramme" aria-hidden="true">✅</span><h3><span lang="fr">Les missions</span><span lang="en">Missions</span></h3><p><span lang="fr">Trois petites missions par jour pour remplir ta tirelire.</span><span lang="en">Three small missions a day to fill your piggy bank.</span></p></article>
+      <article class="carte-info"><span class="pictogramme" aria-hidden="true">🎁</span><h3><span lang="fr">La récompense du jour</span><span lang="en">Daily reward</span></h3><p><span lang="fr">Un coffre gratuit à ouvrir une fois par jour.</span><span lang="en">A free chest to open once a day.</span></p></article>
+      <article class="carte-info"><span class="pictogramme" aria-hidden="true">✨</span><h3><span lang="fr">La boutique</span><span lang="en">The shop</span></h3><p><span lang="fr">Avatars, couleurs, motos pour Looping, bannières et emblèmes pour ton profil.</span><span lang="en">Avatars, colours, Looping bikes, banners and badges for your profile.</span></p></article>
+      <article class="carte-info"><span class="pictogramme" aria-hidden="true">💬</span><h3><span lang="fr">Messages et stories</span><span lang="en">Messages and stories</span></h3><p><span lang="fr">Écris à tes amis, propose-leur une partie, publie une story.</span><span lang="en">Message your friends, invite them to a game, post a story.</span></p></article>
+      <article class="carte-info"><span class="pictogramme" aria-hidden="true">🏅</span><h3><span lang="fr">Tournois</span><span lang="en">Tournaments</span></h3><p><span lang="fr">Organise un tournoi entre amis et deviens le champion.</span><span lang="en">Set up a tournament with friends and become the champion.</span></p></article>
+    </div>
+  </section>
+
+  <!-- Sécurité -->
+  <section class="bloc encadre">
+    <h2 class="titre-bloc"><span lang="fr">Un endroit sûr pour jouer</span><span lang="en">A safe place to play</span></h2>
+    <ul class="coches">
+      <li><span lang="fr">Les messages privés, seulement entre amis, une fois la demande acceptée.</span><span lang="en">Private messages only between friends, once the request is accepted.</span></li>
+      <li><span lang="fr">Le chat des parties est filtré, et tout joueur peut être bloqué ou signalé.</span><span lang="en">Game chat is filtered, and any player can be blocked or reported.</span></li>
+      <li><span lang="fr">Aucune pub imposée : tu en regardes une seulement si tu veux une aide.</span><span lang="en">No forced ads: you only watch one if you want some help.</span></li>
+      <li><span lang="fr">Pas de localisation, pas d'accès à tes contacts, tes photos ou ton micro.</span><span lang="en">No location, no access to your contacts, photos or microphone.</span></li>
+    </ul>
+    <p class="lien-suite"><a href="regles.html"><span lang="fr">Les règles de Frimouz</span><span lang="en">Frimouz rules</span></a> · <a href="confidentialite.html"><span lang="fr">Confidentialité</span><span lang="en">Privacy</span></a></p>
+  </section>
+
+  <!-- Questions -->
+  <section class="bloc">
+    <h2 class="titre-bloc"><span lang="fr">Questions fréquentes</span><span lang="en">FAQ</span></h2>
+    <div class="questions">
+      <details><summary><span lang="fr">Frimouz est-il gratuit ?</span><span lang="en">Is Frimouz free?</span></summary><p><span lang="fr">Oui. Tous les jeux sont gratuits. Tu peux acheter des pièces si tu veux, mais tu en gagnes aussi en jouant, avec les missions, le défi et le coffre du jour.</span><span lang="en">Yes. All games are free. You can buy coins if you like, but you also earn them by playing, with missions, the challenge and the daily chest.</span></p></details>
+      <details><summary><span lang="fr">Faut-il créer un compte ?</span><span lang="en">Do I need an account?</span></summary><p><span lang="fr">Non, tu peux jouer tout de suite, sans e-mail. Tu peux sauvegarder ton compte plus tard pour le retrouver sur un autre téléphone.</span><span lang="en">No, you can play right away, without an email. You can back up your account later to find it on another phone.</span></p></details>
+      <details><summary><span lang="fr">Sur quels téléphones ?</span><span lang="en">Which phones?</span></summary><p><span lang="fr">Frimouz est en test sur Android et arrive bientôt sur iPhone. On peut jouer en ligne entre Android et iPhone.</span><span lang="en">Frimouz is in testing on Android and coming soon to iPhone. Android and iPhone players can play online together.</span></p></details>
+      <details><summary><span lang="fr">Comment supprimer mon compte ?</span><span lang="en">How do I delete my account?</span></summary><p><span lang="fr">Dans l'app : Profil, Paramètres, puis « Effacer mes données ». Tout est expliqué sur la page <a href="suppression-compte.html">Supprimer mon compte</a>.</span><span lang="en">In the app: Profile, Settings, then “Erase my data”. Everything is explained on the <a href="suppression-compte.html">Delete my account</a> page.</span></p></details>
+      <details><summary><span lang="fr">Une question, une idée ?</span><span lang="en">A question or an idea?</span></summary><p><span lang="fr">Écris-nous à <a href="mailto:frimouz.pro@gmail.com">frimouz.pro@gmail.com</a>, on lit tout.</span><span lang="en">Write to us at <a href="mailto:frimouz.pro@gmail.com">frimouz.pro@gmail.com</a>, we read everything.</span></p></details>
+    </div>
+  </section>
 </main>
+
 <footer>
   <nav><a href="confidentialite.html"><span lang="fr">Confidentialité</span><span lang="en">Privacy</span></a><a href="regles.html"><span lang="fr">Règles de Frimouz</span><span lang="en">Frimouz rules</span></a><a href="suppression-compte.html"><span lang="fr">Supprimer mon compte</span><span lang="en">Delete my account</span></a></nav>
   <p><span lang="fr">Contact</span><span lang="en">Contact</span> : <a href="mailto:frimouz.pro@gmail.com">frimouz.pro@gmail.com</a></p>
